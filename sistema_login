@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS `sistema_login` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `sistema_login`;
+
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `password` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `usuarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
